@@ -1,0 +1,15 @@
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+s=Mediasoup Stream
+c=IN IP4 127.0.0.1
+t=0 0
+m=video 12001 RTP/AVP 101
+a=rtpmap:101 VP8/90000
+a=fmtp:101 
+a=sendonly
+m=audio 12002 RTP/AVP 100
+a=rtpmap:100 opus/48000/2
+a=fmtp:100 minptime=10;useinbandfec=1
+a=sendonly
+  
